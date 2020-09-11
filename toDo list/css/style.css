@@ -1,0 +1,99 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  -webkit-animation: bg-color-change 15s linear infinite alternate both;
+  animation: bg-color-change linear 15s infinite alternate both;
+}
+.row{
+  padding-top: 10rem;
+}
+#inputField{
+  border: 3px solid #dcdde1;
+  height: 50px;
+}
+input::placeholder{
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  color: #718093;
+}
+#toDoHead{
+  font-family: 'Carter One', cursive;
+  font-size: 50px;
+}
+.btn{
+  font-size: 23px;
+  font-weight: bold;
+    border: none;
+}
+#foot-text{
+  padding-top: 13.5rem;
+}
+.li-class{
+  padding-left: 25rem;
+  color: white;
+  font-weight: bold;
+}
+#toDo{
+  font-family: 'Carter One', cursive;
+  font-size: 40px;
+}
+
+@media screen and (max-width:767px) {
+  .btn{
+    width: 30% !important;
+    margin-top: 20px;
+  }
+  #inputField{
+    width: 100% !important;
+  }
+  .row{
+    padding-top: 8rem;
+  }
+  #foot-text{
+    padding-top: 9.5rem;
+  }
+  .li-class{
+    padding: 0rem 3rem;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+
+@-webkit-keyframes bg-color-change{
+  0%{
+    background: #8BC34A;
+  }
+  25%{
+    background: #00BCD4;
+  }
+  50%{
+    background: #03A9F4;
+  }
+  75%{
+    background: #CDDC39;
+  }
+  100%{
+    background: #9C27B0;
+  }
+}
+@keyframes bg-color-change {
+  0%{
+    background: #8BC34A;
+  }
+  25%{
+    background: #00BCD4;
+  }
+  50%{
+    background: #03A9F4;
+  }
+  75%{
+    background: #CDDC39;
+  }
+  100%{
+    background: #9C27B0;
+  }
+}

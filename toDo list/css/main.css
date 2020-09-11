@@ -1,0 +1,87 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  -webkit-animation: bg-color-change 15s linear infinite alternate both;
+  animation: bg-color-change linear 15s infinite alternate both;
+}
+.row{
+  padding-top: 12rem;
+}
+#inputArea{
+  border: 3px solid #dcdde1;
+  height: 50px;
+}
+#inputField{
+  border: 3px solid #dcdde1;
+  height: 50px;
+}
+input::placeholder{
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  color: #718093;
+}
+#toDoHead{
+  font-family: 'Carter One', cursive;
+  font-size: 50px;
+}
+.btn{
+  font-size: 23px;
+  font-weight: bold;
+}
+#foot-text{
+  padding-top: 9.4rem;
+}
+#toDoList li{
+  text-align: center;
+}
+
+@media screen and (max-width:767px) {
+  .btn{
+    width: 70% !important;
+  }
+  #inputArea, #inputField{
+    width: 70% !important;
+  }
+  .row{
+    padding-top: 5.5rem;
+  }
+}
+
+
+@-webkit-keyframes bg-color-change{
+  0%{
+    background: #8BC34A;
+  }
+  25%{
+    background: #00BCD4;
+  }
+  50%{
+    background: #03A9F4;
+  }
+  75%{
+    background: #CDDC39;
+  }
+  100%{
+    background: #9C27B0;
+  }
+}
+@@keyframes bg-color-change {
+  0%{
+    background: #8BC34A;
+  }
+  25%{
+    background: #00BCD4;
+  }
+  50%{
+    background: #03A9F4;
+  }
+  75%{
+    background: #CDDC39;
+  }
+  100%{
+    background: #9C27B0;
+  }
+}
